@@ -84,6 +84,11 @@ Route::group(['middleware' => 'auth'], function () {
 // Login (Public route)
 Route::post('/login', [LoginController::class, 'login']);
 
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+
+
 // Private Routes (Authentication required)
 
 Route::group(['middleware' => 'auth'], function () {
@@ -103,13 +108,9 @@ Route::group(['middleware' => 'auth'], function () {
 
 // Guest Routes (Only accessible to non-authenticated users)
 
-Route::group(['middleware' => 'guest'], function () {
+//Route::group(['middleware' => 'guest'], function () {
     // User Registration (Guest route)
-    Route::get('/register', [RegistrationController::class, 'showRegistrationForm']);
-    Route::post('/register', [RegistrationController::class, 'register']);
-});
+    //Route::get('/register', [RegistrationController::class, 'showRegistrationForm']);
+    //Route::post('/register', [RegistrationController::class, 'register']);
+//});
 
-
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('register');
