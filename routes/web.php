@@ -108,3 +108,8 @@ Route::group(['middleware' => 'guest'], function () {
     Route::get('/register', [RegistrationController::class, 'showRegistrationForm']);
     Route::post('/register', [RegistrationController::class, 'register']);
 });
+
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
