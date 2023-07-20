@@ -84,17 +84,17 @@ Route::group(['middleware' => 'auth'], function () {
 // Login (Public route)
 Route::post('/login', [LoginController::class, 'login']);
 
-//Route::get('/register', function () {
-    //return view('auth.register');
-//})->name('register');
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
 
 // Guest Routes (Only accessible to non-authenticated users)
 
-Route::group(['middleware' => 'guest'], function () {
+//Route::group(['middleware' => 'guest'], function () {
     //User Registration (Guest route)
-    Route::get('/register', [RegistrationController::class, 'showRegistrationForm']);
-    Route::post('/register', [RegistrationController::class, 'register']);
-});
+    //Route::get('/register', [RegistrationController::class, 'showRegistrationForm']);
+    //Route::post('/register', [RegistrationController::class, 'register']);
+//});
 
 
 // Private Routes (Authentication required)
@@ -105,9 +105,9 @@ Route::group(['middleware' => 'auth'], function () {
     // Check Statement
     Route::post('/check-statement', [StatementController::class, 'checkStatement']);
     // Request Loan
-    Route::post('/request-loan', [LoanController::class, 'requestLoan']);
+    Route::post('/request-loan', [LoanController::class, 'requestLoan'])->name('request-loan');
     // Check Loan Status
-    Route::post('/loan-status', [LoanController::class, 'loanStatus']);
+    Route::post('/loan-status', [LoanController::class, 'loanStatus'])->name('loan-status');
     // Accept or Reject Loan
     Route::post('/accept-loan', [LoanController::class, 'acceptLoan']);
 });

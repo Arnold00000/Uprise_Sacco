@@ -68,11 +68,12 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
-                        <canvas id="CountryChart"></canvas>
+                        <canvas id="dailyDepositsChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
@@ -366,7 +367,53 @@
           demo.initDashboardPageCharts();
         });
     </script>
-@endpush
+<!--@endpush-->
 
+<!--@push('js')-->
+<!--<script src="{{ asset('white') }}/js/plugins/chartjs.min.js"></script>-->
+<script>
+    // Data for the pie chart
+    var data = {
+        labels: ["Deposits Made", "Loans Taken"],
+        datasets: [
+            {
+                data: [2500, 1000], // Replace these values with your actual data
+                backgroundColor: ["#1ABC9C", "#6DD79A"], // Use dark green and light green colors
+                borderWidth: 0,
+            },
+        ],
+    };
+
+    // Options for the pie chart
+    var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            position: 'bottom',
+        },
+        tooltips: {
+            callbacks: {
+                label: function (tooltipItem, data) {
+                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                    var total = dataset.data.reduce(function (previousValue, currentValue) {
+                        return previousValue + currentValue;
+                    });
+                    var currentValue = dataset.data[tooltipItem.index];
+                    var percentage = Math.floor((currentValue / total) * 100 + 0.5);
+                    return percentage + '%';
+                },
+            },
+        },
+    };
+
+    // Get the canvas element and create the pie chart
+    var ctx = document.getElementById('dailyDepositsChart').getContext('2d');
+    var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options,
+    });
+</script>
+@endpush
 
 
