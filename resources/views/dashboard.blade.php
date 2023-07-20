@@ -8,7 +8,7 @@
                 <div class="card-header ">
                     <div class="row">
                         <div class="col-sm-6 text-left">
-                            <h5 class="card-category">Total Shipments</h5>
+                            <h5 class="card-category">UPRISE SACCO</h5>
                             <h2 class="card-title">Performance</h2>
                         </div>
                         <div class="col-sm-6">
@@ -22,14 +22,14 @@
                             </label>
                             <label class="btn btn-sm btn-primary btn-simple" id="1">
                                 <input type="radio" class="d-none d-sm-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Purchases</span>
+                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Deposits</span>
                                 <span class="d-block d-sm-none">
                                     <i class="tim-icons icon-gift-2"></i>
                                 </span>
                             </label>
                             <label class="btn btn-sm btn-primary btn-simple" id="2">
                                 <input type="radio" class="d-none" name="options">
-                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Sessions</span>
+                                <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block"></span>Feedback
                                 <span class="d-block d-sm-none">
                                     <i class="tim-icons icon-tap-02"></i>
                                 </span>
@@ -50,7 +50,7 @@
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
-                    <h5 class="card-category">Total Shipments</h5>
+                    <h5 class="card-category">UPRISE SACCO</h5>
                     <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3>
                 </div>
                 <div class="card-body">
@@ -63,7 +63,7 @@
         <div class="col-lg-4">
             <div class="card card-chart">
                 <div class="card-header">
-                    <h5 class="card-category">Daily Sales</h5>
+                    <h5 class="card-category">Daily Deposits</h5>
                     <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3>
                 </div>
                 <div class="card-body">
@@ -77,7 +77,7 @@
             <div class="card card-chart">
                 <div class="card-header">
                     <h5 class="card-category">Completed Tasks</h5>
-                    <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3>
+                    <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100</h3>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
@@ -91,7 +91,7 @@
         <div class="col-lg-6 col-md-12">
             <div class="card card-tasks">
                 <div class="card-header ">
-                    <h6 class="title d-inline">Tasks(5)</h6>
+                    <h6 class="title d-inline" style="color: red;">Pending Tasks(5)</h6>
                     <p class="card-category d-inline">today</p>
                     <div class="dropdown">
                         <button type="button" class="btn btn-link dropdown-toggle btn-icon" data-toggle="dropdown">
@@ -243,7 +243,7 @@
         <div class="col-lg-6 col-md-12">
             <div class="card ">
                 <div class="card-header">
-                    <h4 class="card-title">Simple Table</h4>
+                    <h4 class="card-title">Members List</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -254,85 +254,85 @@
                                         Name
                                     </th>
                                     <th>
-                                        Country
-                                    </th>
-                                    <th>
                                         City
                                     </th>
+                                    <th>
+                                        Work
+                                    </th>
                                     <th class="text-center">
-                                        Salary
+                                        TEL. NUMBER
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                      Dakota Rice
+                                    KIMULI ARNOLD
                                     </td>
                                     <td>
-                                      Niger
+                                      Kampala
                                     </td>
                                     <td>
-                                      Oud-Turnhout
+                                      Software Engineer
                                     </td>
                                     <td class="text-center">
-                                      $36,738
+                                      0740832345
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Minerva Hooper
+                                    KISEMBO ROGERS BANGIRANA
                                     </td>
                                     <td>
-                                        Curaçao
+                                        Mbarara
                                     </td>
                                     <td>
-                                        Sinaai-Waas
+                                        Data Scientist
                                     </td>
                                     <td class="text-center">
-                                        $23,789
+                                        07897356
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Sage Rodriguez
+                                    OLOWO PHILLY
                                     </td>
                                     <td>
-                                        Netherlands
+                                        Gulu
                                     </td>
                                     <td>
-                                        Baileux
+                                        Cyber Security
                                     </td>
                                     <td class="text-center">
-                                        $56,142
+                                        07653298
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Philip Chaney
+                                    BBANGA SAMUEL
                                     </td>
                                     <td>
-                                        Korea, South
+                                        Mbale
                                     </td>
                                     <td>
-                                        Overland Park
+                                        Securiko
                                     </td>
                                     <td class="text-center">
-                                        $38,735
+                                        0672383290
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Doris Greene
+                                        Naba Doriz
                                     </td>
                                     <td>
                                         Malawi
                                     </td>
                                     <td>
-                                        Feldkirchen in Kärnten
+                                        Data analyst
                                     </td>
                                     <td class="text-center">
-                                        $63,542
+                                        90007868
                                     </td>
                                 </tr>
                                 <tr>
@@ -343,26 +343,13 @@
                                         Chile
                                     </td>
                                     <td>
-                                        Gloucester
+                                        Software Engineer
                                     </td>
                                     <td class="text-center">
-                                        $78,615
+                                        3764879820
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        Jon Porter
-                                    </td>
-                                    <td>
-                                        Portugal
-                                    </td>
-                                    <td>
-                                        Gloucester
-                                    </td>
-                                    <td class="text-center">
-                                        $98,615
-                                    </td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
