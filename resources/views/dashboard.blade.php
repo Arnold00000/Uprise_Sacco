@@ -369,7 +369,7 @@
     </script>
 <!--@endpush-->
 
-<!--@push('js')-->
+<!--@push('js')-->  
 <!--<script src="{{ asset('white') }}/js/plugins/chartjs.min.js"></script>-->
 <script>
     // Data for the pie chart
