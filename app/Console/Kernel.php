@@ -12,7 +12,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        // Add the SendPerformanceReports command to run hourly
+        $schedule->command('report:send')->hourly();
     }
 
     /**
@@ -22,6 +23,9 @@ class Kernel extends ConsoleKernel
     {
         $this->load(__DIR__.'/Commands');
 
-        require base_path('routes/console.php');
+        // Register the SendPerformanceReports command
+        $this->commands([
+            \App\Console\Commands\SendPerformanceReports::class,
+        ]);
     }
 }
